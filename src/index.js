@@ -3,7 +3,6 @@
 /* eslint-disable react/no-danger, react/sort-comp */
 
 import React from 'react';
-import clippySvg from './clippy.svg';
 
 type Props = {
   value: string,
@@ -462,11 +461,7 @@ export default class Viewer extends React.Component<Props, State> {
           readOnly={readOnly}
         />
         <div onClick={() => this._copy(value)}>
-          <img
-            src={clippySvg}
-            style={{ ...styles.clippy, ..._displayClippyImg }}
-            alt="Copy to clipboard"
-          />
+          Copy
         </div>
         <pre
           aria-hidden="true"
